@@ -392,7 +392,6 @@ end
 if min(pspike)<0
     disp('Warning: Pspike has values smaller than 0; should not be possible!')
     disp(['min(Pspike) = ', num2str(min(pspike))])
-    keyboard
 end
     
 %% Make spikes

@@ -6,6 +6,6 @@ includemodulationyn = 0;                                    % direct whisker mod
 includeSTDPyn = 0;                                          % STDP (0 = no, 1=yes)
 
 % How to save everything
-savename = ['Test_sim_Svoboda'];
+savename = ['Test_sim_Svoboda-judge'];
 
 run_sim(make_new_thalamic_input,make_new_thalamic_kernels,make_new_connectivity,includemodulationyn,includeSTDPyn, savename)
