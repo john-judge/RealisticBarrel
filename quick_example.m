@@ -9,4 +9,5 @@ includeSTDPyn = 0;                                          % STDP (0 = no, 1=ye
 % How to save everything
 savename = ['Test_sim_Svoboda-judge'];
 
-run_sim(make_new_thalamic_input,make_new_thalamic_kernels,make_new_connectivity,includemodulationyn,includeSTDPyn, savename)
+run_sim(make_new_thalamic_input,make_new_thalamic_kernels,make_new_connectivity,includemodulationyn,includeSTDPyn, savename);
+exit;
