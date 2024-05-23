@@ -1,4 +1,4 @@
-function run_sim(make_new_thalamic_input,make_new_thalamic_kernels,make_new_connectivity,includemodulationyn,includeSTDPyn, savename)
+function run_sim(make_new_thalamic_input,make_new_thalamic_kernels,make_new_connectivity,includemodulationyn,includeSTDPyn, includeSTPyn, savename)
 
 %% General settings
 f = filesep;
@@ -94,6 +94,11 @@ if includeSTDPyn
     simdata.STDP = true;                    % Turn on STDP          
 else
     simdata.STDP = false;                    % Turn off STDP        
+end
+if includeSTPyn
+    simdata.STP = true;                    % Turn on STP          
+else
+    simdata.STP = false;                    % Turn off STP        
 end
 
 % Parameters and variables to save for each trial:
@@ -195,5 +200,5 @@ Para.tmax = TSim;
 simulation_to_calcium( Para, savefolder,savename, initdata, simdata.Nsim);
 
 %% Plot
-plot_simulation(simdata.Nsim, initdata, ConData, savename_input)
+%% plot_simulation(simdata.Nsim, initdata, ConData, savename_input)
 

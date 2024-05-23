@@ -5,9 +5,10 @@ make_new_connectivity = 1;                                  % make new (1) or us
 
 includemodulationyn = 0;                                    % direct whisker modulation of L23 neurons (0 = no, 1=yes), see Crochet et al. 2011
 includeSTDPyn = 0;                                          % STDP (0 = no, 1=yes)
+includeSTPyn = 0;                                          % STP (0 = no, 1=yes)
 
 % How to save everything
 savename = ['Test_sim_Svoboda-judge'];
 
-run_sim(make_new_thalamic_input,make_new_thalamic_kernels,make_new_connectivity,includemodulationyn,includeSTDPyn, savename);
+run_sim(make_new_thalamic_input,make_new_thalamic_kernels,make_new_connectivity,includemodulationyn,includeSTDPyn, includeSTPyn, savename);
 exit;
