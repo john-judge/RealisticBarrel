@@ -26,9 +26,9 @@ if make_new_thalamic_input
     SvobodaStruct.Nkernel_c  = 80;                              % # curvature kernels ('neurons')
     SvobodaStruct.Nkernel_m  = 40;                              % # mixed kernels ('neurons')
 else
-    dategen = input('Please give date input to load was generated: ', 's');
-    animalname = input('Please give animal identifier of input to load: ', 's');
-    savename_input = [savename '_' animalname '_' dategen];
+    %dategen = input('Please give date input to load was generated: ', 's');
+    %animalname = input('Please give animal identifier of input to load: ', 's');
+    savename_input = [savename];
 end
 
 if ~exist(savefolder, 'dir')
